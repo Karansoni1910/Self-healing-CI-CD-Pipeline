@@ -7,7 +7,7 @@ while preserving existing working code and only addressing the specific issue th
 */
 
 const payload = $("Github failure webhook").first().json.body;
-const jobs = $('Fetch logs').first().json || [];
+const jobs = $('Fetch logs').first().json.jobs || [];
 
 const failedJob = jobs.find(j => j.conclusion === "failure") || jobs[0];
 const failedSteps = failedJob?.steps?.filter(s => s.conclusion === "failure") || [];
