@@ -1,7 +1,6 @@
 const express = require('express');
 const http = require('http');
 
-
 app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
