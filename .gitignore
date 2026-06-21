@@ -1,2 +1,9 @@
 node_modules
 temp
+*.txt
+.env
+.env.local
+.env.*.local
+secrets/
+*.key
+*.pem
